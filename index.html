@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamshi Krishna Travels - Cab Services & Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Welcome to Vamshi Krishna Travels</h2>
+            <p>Loading your journey...</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-person-hiking"></i>
+                <h1>VK Travels</h1>
+            </div>
+            <nav>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#services"><i class="fas fa-route"></i> Services</a></li>
+                    <li><a href="#fleet"><i class="fas fa-car"></i> Our Fleet</a></li>
+                    <li><a href="#destinations"><i class="fas fa-images"></i> Best Places</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+
+    <!-- SOUTH INDIA – TEMPLES -->
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1604309892248-bde9e6f65c2d?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Tirupati Balaji – Andhra Pradesh</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Meenakshi Amman Temple – Madurai</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1622627484379-6a54a38bca4f?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Brihadeeswarar Temple – Thanjavur</div>
+    </div>
+
+    <!-- TELANGANA & HYDERABAD -->
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Hyderabad International Airport (RGIA)</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1580734072633-ff8a8a6d32f5?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Charminar – Hyderabad</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1600240644457-3f2f5e9e87d4?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Ramappa Temple – Telangana (UNESCO)</div>
+    </div>
+
+    <!-- SOUTH INDIA – TOURISM -->
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Kerala – God’s Own Country</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Ooty – Queen of Hill Stations</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1623067764096-8cfd25c9a7da?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Hampi – Karnataka Heritage</div>
+    </div>
+
+    <!-- NORTH INDIA -->
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Taj Mahal – Agra</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Manali – Himachal Pradesh</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&h=400&fit=crop&crop=center">
+        <div class="slide-text">Jaipur – The Pink City</div>
+    </div>
+
+    <!-- CONTROLS -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+</div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded and owned by <strong>Satyanarayana Goud</strong> from Mahabubnagar, VK Travels is dedicated to providing exceptional travel experiences across India.</p>
+        <p>We specialize in cab services in Telangana and Andhra Pradesh, and offer comprehensive tours throughout South and North India.</p>
+        <div class="why-choose-us">
+            <h3>Why Choose VK Travels?</h3>
+            <ul>
+                <li>Experienced and reliable drivers</li>
+                <li>Well-maintained, modern fleet</li>
+                <li>Customized travel packages</li>
+                <li>24/7 customer support</li>
+                <li>Competitive pricing</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <i class="fas fa-taxi"></i>
+                <h3>Cab Services</h3>
+                <p>Reliable cab services in Telangana and Andhra Pradesh for all your transportation needs.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>South India Tours</h3>
+                <p>Explore the beauty of South India with our guided tours covering major attractions.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-mountain"></i>
+                <h3>North India Tours</h3>
+                <p>Discover the wonders of North India, from the Himalayas to historical monuments.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-plane-departure"></i>
+                <h3>Airport Transfers</h3>
+                <p>Convenient and punctual airport pickup and drop-off services.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-briefcase"></i>
+                <h3>Corporate Travel</h3>
+                <p>Professional travel solutions for business meetings and corporate events.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Custom Packages</h3>
+                <p>Tailor-made travel packages to suit your specific requirements and budget.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <h2><i class="fas fa-images"></i> Best Places in India</h2>
+        <p>Explore the most spectacular destinations across South and North India with our expert guided tours</p>
+
+        <h3 class="south-india-header"><i class="fas fa-compass"></i> South India</h3>
+        <div class="gallery-grid">
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871396/pexels-photo-15871396.jpeg?w=400&h=250&fit=crop&crop=center" alt="Tirupati Balaji Temple Andhra Pradesh">
+                <h4>Tirupati Balaji</h4>
+                <p>One of the richest temples in India - Lord Venkateswara</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871398/pexels-photo-15871398.jpeg?w=400&h=250&fit=crop&crop=center" alt="Meenakshi Temple Madurai Tamil Nadu">
+                <h4>Meenakshi Temple</h4>
+                <p>Magnificent Dravidian architecture in Madurai</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop&crop=center" alt="Ramanathaswamy Temple Rameswaram">
+                <h4>Ramanathaswamy Temple</h4>
+                <p>Sacred temple in Rameswaram with 22 holy wells</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop&crop=center" alt="Kanyakumari Vivekananda Rock">
+                <h4>Kanyakumari</h4>
+                <p>Southernmost tip of India - Vivekananda Rock Memorial</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.unsplash.com/photo-1609766857846-56f6d7c4af2b?w=400&h=250&fit=crop&crop=center" alt="Mahabalipuram Shore Temple">
+                <h4>Mahabalipuram</h4>
+                <p>UNESCO site with ancient temples and rock carvings</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=400&h=250&fit=crop&crop=center" alt="Brihadeeswarar Temple Thanjavur">
+                <h4>Brihadeeswarar Temple</h4>
+                <p>UNESCO World Heritage Site - Largest temple in India</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871400/pexels-photo-15871400.jpeg?w=400&h=250&fit=crop&crop=center" alt="Padmanabhaswamy Temple Thiruvananthapuram">
+                <h4>Padmanabhaswamy Temple</h4>
+                <p>Richest temple in India with ancient treasures</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871401/pexels-photo-15871401.jpeg?w=400&h=250&fit=crop&crop=center" alt="Srirangam Temple Tiruchirappalli">
+                <h4>Srirangam Temple</h4>
+                <p>Largest functioning Hindu temple complex in India</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871402/pexels-photo-15871402.jpeg?w=400&h=250&fit=crop&crop=center" alt="Chidambaram Temple">
+                <h4>Chidambaram Temple</h4>
+                <p>Home of Lord Nataraja - Cosmic Dance of Shiva</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871403/pexels-photo-15871403.jpeg?w=400&h=250&fit=crop&crop=center" alt="Kumbakonam Temples">
+                <h4>Kumbakonam Temples</h4>
+                <p>Temple town with magnificent Dravidian architecture</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871404/pexels-photo-15871404.jpeg?w=400&h=250&fit=crop&crop=center" alt="Hampi Ancient Ruins">
+                <h4>Hampi</h4>
+                <p>UNESCO site with ancient Vijayanagara ruins</p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #e74c3c; margin: 3rem 0 1rem 0;"><i class="fas fa-mountain"></i> North India</h3>
+        <div class="gallery-grid">
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871400/pexels-photo-15871400.jpeg?w=400&h=250&fit=crop&crop=center" alt="Taj Mahal Agra">
+                <h4>Taj Mahal</h4>
+                <p>Symbol of eternal love - UNESCO World Heritage Site</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871401/pexels-photo-15871401.jpeg?w=400&h=250&fit=crop&crop=center" alt="Red Fort Delhi">
+                <h4>Red Fort</h4>
+                <p>Historic Mughal fort in the heart of Delhi</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871402/pexels-photo-15871402.jpeg?w=400&h=250&fit=crop&crop=center" alt="Jaipur City Palace">
+                <h4>Jaipur Palace</h4>
+                <p>Pink City palaces and royal heritage</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871403/pexels-photo-15871403.jpeg?w=400&h=250&fit=crop&crop=center" alt="Varanasi Ghats">
+                <h4>Varanasi</h4>
+                <p>Sacred city of temples and spiritual enlightenment</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871404/pexels-photo-15871404.jpeg?w=400&h=250&fit=crop&crop=center" alt="Shimla Himachal Pradesh">
+                <h4>Shimla</h4>
+                <p>Queen of hills with colonial architecture</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871405/pexels-photo-15871405.jpeg?w=400&h=250&fit=crop&crop=center" alt="Golden Temple Amritsar">
+                <h4>Golden Temple</h4>
+                <p>Sacred Sikh shrine radiating spiritual peace</p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #27ae60; margin: 3rem 0 1rem 0;"><i class="fas fa-plane"></i> Transportation Hubs</h3>
+        <div class="gallery-grid">
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871406/pexels-photo-15871406.jpeg?w=400&h=250&fit=crop&crop=center" alt="Rajiv Gandhi International Airport Hyderabad">
+                <h4>Hyderabad Airport</h4>
+                <p>Rajiv Gandhi International Airport - Convenient pickups & drop-offs</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871407/pexels-photo-15871407.jpeg?w=400&h=250&fit=crop&crop=center" alt="Indira Gandhi International Airport Delhi">
+                <h4>Delhi Airport</h4>
+                <p>Indira Gandhi International Airport - Major gateway to India</p>
+            </div>
+            <div class="destination-item">
+                <img src="https://images.pexels.com/photos/15871408/pexels-photo-15871408.jpeg?w=400&h=250&fit=crop&crop=center" alt="Chennai International Airport">
+                <h4>Chennai Airport</h4>
+                <p>Chennai International Airport - Southern gateway</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fleet">
+        <h2>Our Fleet</h2>
+        <p>We maintain a modern and comfortable fleet to ensure your journey is safe and enjoyable:</p>
+        <div class="fleet-grid">
+            <div class="fleet-item">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400&h=250&fit=crop&crop=center" alt="Maruti Swift Dzire">
+                <i class="fas fa-car"></i>
+                <h3>Swift Dzire</h3>
+                <p>Comfortable sedan for city rides and short trips.</p>
+            </div>
+            <div class="fleet-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop&crop=center" alt="Hyundai Creta">
+                <i class="fas fa-car-side"></i>
+                <h3>Creta</h3>
+                <p>Spacious SUV perfect for family outings.</p>
+            </div>
+            <div class="fleet-item">
+                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=250&fit=crop&crop=center" alt="Toyota Innova Crysta">
+                <i class="fas fa-shuttle-van"></i>
+                <h3>Innova Crysta</h3>
+                <p>Luxury MPV for group travel and long journeys.</p>
+            </div>
+            <div class="fleet-item">
+                <img src="https://images.unsplash.com/photo-1549399735-cef2e2c3f638?w=400&h=250&fit=crop&crop=center" alt="Mahindra Scorpio">
+                <i class="fas fa-car"></i>
+                <h3>Scorpio</h3>
+                <p>Rugged SUV for adventurous journeys.</p>
+            </div>
+            <div class="fleet-item">
+                <img src="https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?w=400&h=250&fit=crop&crop=center" alt="24 Seater Bus">
+                <i class="fas fa-bus"></i>
+                <h3>24 Seater Bus</h3>
+                <p>Ideal for large group tours and corporate events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"Excellent service! The driver was punctual and the car was spotless. Highly recommend VK Travels."</p>
+                <cite>- Rajesh Kumar</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Our family tour to South India was unforgettable. Professional guides and comfortable vehicles."</p>
+                <cite>- Priya Sharma</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Great experience with the 24-seater bus for our corporate outing. Everything was well-organized."</p>
+                <cite>- Anil Mehta</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+        <p>Ready to plan your next adventure? Get in touch with us!</p>
+        
+        <!-- Success/Error Messages -->
+        <div id="form-message" class="form-message" style="display: none;"></div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h3>Owner</h3>
+                        <p>Satyanarayana</p>
+                    </div>
+        ser        </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Mahabubnagar</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>ssgoud96@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>9876543210</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="service"><i class="fas fa-route"></i> Service Interested In</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service</option>
+                        <option value="cab-service">Cab Service</option>
+                        <option value="south-india-tour">South India Tour</option>
+                        <option value="north-india-tour">North India Tour</option>
+                        <option value="airport-transfer">Airport Transfer</option>
+                        <option value="corporate-travel">Corporate Travel</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your travel requirements..."></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" id="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-person-hiking"></i> VK Travels</h3>
+                <p>Your trusted travel partner for Telangana, Andhra Pradesh, and all India tours.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Cab Services</li>
+                    <li>South India Tours</li>
+                    <li>North India Tours</li>
+                    <li>Airport Transfers</li>
+                    <li>Corporate Travel</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VK Travels. All rights reserved. | Made with <i class="fas fa-heart"></i> for your journey</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
