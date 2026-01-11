@@ -4,7 +4,7 @@
 (function() {
     // Check if EmailJS is loaded
     if (typeof emailjs !== 'undefined') {
-        emailjs.init("J2On6AvryHHmP68fq");
+        emailjs.init("J2On6AvryHHmP68fq"); // Your EmailJS Public Key
         console.log('EmailJS initialized successfully');
     } else {
         console.error('EmailJS library not loaded');
@@ -81,7 +81,7 @@ function showDestinationDetails(card, index) {
             description: 'One of the richest temples in India dedicated to Lord Venkateswara. Experience divine blessings and architectural marvels.',
             highlights: ['Golden Temple', 'Divine Darshan', 'Hilltop Location', 'Festive Celebrations'],
             bestTime: 'October to March',
-            duration: '1-2 Days'
+            duration: '2 -3 Days'
         },
         {
             name: 'Meenakshi Temple',
@@ -105,7 +105,7 @@ function showDestinationDetails(card, index) {
             description: 'The southernmost tip of India where three seas meet, featuring the iconic Vivekananda Rock Memorial.',
             highlights: ['Vivekananda Rock', 'Sunset Point', 'Three Seas Meeting', 'Triveni Sangam'],
             bestTime: 'October to May',
-            duration: '1-2 Days'
+            duration: '2 - 5 Days'
         },
         {
             name: 'Mahabalipuram',
@@ -497,7 +497,7 @@ function testEmailJS() {
     }
     
     console.log('Testing EmailJS connection...');
-    emailjs.send('service_5m55sjy', 'template_50xp96r', {
+    emailjs.send('Service_ID', 'emailTemplate_ID', {
         from_name: 'Test User',
         from_email: 'test@example.com',
         message: 'This is a test message',
@@ -513,3 +513,17 @@ function testEmailJS() {
 // setTimeout(testEmailJS, 2000);
 
 console.log('VK Travels Enhanced Interactive Website Loaded Successfully! 🚗✨');
+
+// Prepare email parameters to match your new HTML template
+const templateParams = {
+    name: data.name,      // Matches {{name}}
+    email: data.email,    // Matches {{email}}
+    phone: data.phone || 'Not provided', // Matches {{phone}}
+    message: data.message // Matches {{message}}
+};
+
+// Send email using EmailJS
+emailjs.send('service_5m55sjy', 'template_50xp96r', templateParams)
+    .then(function(response) {
+        // Success code...
+    });
